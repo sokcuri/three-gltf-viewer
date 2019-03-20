@@ -7,7 +7,7 @@
   "browser": "src/app.js",
   "scripts": {
     "start": "electron .",
-    "build": "browserify src/app.js -o bundle.js",
+    "build": "browserify src/app.js | uglifyjs --ecma 6 -cm > bundle.js",
     "build:validator": "echo \"window.gltfValidator = require('gltf-validator');\" | browserify - > lib/gltf-validator.js",
     "build:registry": "curl https://rawgit.com/KhronosGroup/glTF-Generator-Registry/master/registry.json -o lib/gltf-generator-registry.json",
     "package": "npm run package:windows && npm run package:mac && npm run package:linux",
@@ -58,6 +58,9 @@
     "electron-packager": "^12.1.2",
     "glslify": "^6.3.1",
     "node-fetch": "^1.7.3",
+    "terser-webpack-plugin": "^1.2.3",
+    "uglify-es": "git+https://github.com/mishoo/UglifyJS2.git#harmony",
+    "uglify-js": "^3.4.10",
     "watchify": "^3.11.0"
   },
   "browserify": {
