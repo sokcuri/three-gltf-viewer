@@ -2,8 +2,8 @@
 
 three.js와 드래그 앤 드롭 인터페이스를 사용하는 WebGL 기반 glTF 2.0 모델 뷰어입니다
 
-## Original
-* Author : donmccurdy (https://github.com/donmccurdy/three-gltf-viewer)
+## Web
+https://sokcuri.github.io/three-gltf-viewer/
 
 ## FBX to glTF 변환
 Facebook의 [FBX2glTF](https://github.com/facebookincubator/FBX2glTF) 프로그램을 이용해 FBX를 glTF로 변환할 수 있습니다.
@@ -62,6 +62,9 @@ npm run dev
 ```
 npm run build
 ```
+
+## Original
+* Author : donmccurdy (https://github.com/donmccurdy/three-gltf-viewer)
 
 ## glTF 2.0 Resources
 
