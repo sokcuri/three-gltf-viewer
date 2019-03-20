@@ -37,7 +37,7 @@
   "author": "Don McCurdy <dm@donmccurdy.com> (https://www.donmccurdy.com)",
   "license": "MIT",
   "dependencies": {
-    "dat.gui": "^0.7.5",
+    "dat.gui": "git+https://git@github.com/sokcuri/dat.gui.git",
     "glob-to-regexp": "^0.4.0",
     "gltf-validator": "^2.0.0-dev.2.7",
     "handlebars": "^4.0.11",
